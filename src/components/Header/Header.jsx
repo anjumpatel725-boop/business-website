@@ -4,13 +4,14 @@ import "./Header.css";
 
 function Header() {
 
+
   const [darkMode, setDarkMode] = useState(false);
 
   const [menuOpen, setMenuOpen] = useState(false);
 
 
 
-  useEffect(() => {
+  useEffect(()=>{
 
     if(darkMode){
 
@@ -23,13 +24,12 @@ function Header() {
 
     }
 
-
   },[darkMode]);
 
 
 
 
-  const closeMenu = () => {
+  const closeMenu = ()=>{
 
     setMenuOpen(false);
 
@@ -48,21 +48,17 @@ BusinessPro
 
 
 
-
 <button
 
 className="menu-btn"
 
 onClick={()=>setMenuOpen(!menuOpen)}
 
-aria-label="Toggle navigation menu"
-
 >
 
 ☰
 
 </button>
-
 
 
 
@@ -116,10 +112,9 @@ onClick={()=>setDarkMode(!darkMode)}
 
 >
 
-{
-darkMode ? "☀️ Light" : "🌙 Dark"
-}
-
+<span>
+{darkMode ? "☀️" : "🌙"}
+</span>
 
 </button>
 
@@ -128,7 +123,6 @@ darkMode ? "☀️ Light" : "🌙 Dark"
 
 
 </ul>
-
 
 
 
