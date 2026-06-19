@@ -1,60 +1,75 @@
 import React from "react";
 import "./Services.css";
 
+
 function Services() {
 
-  return (
 
-    <section className="services" id="services">
+return (
 
-
-      <h2>Our Services</h2>
+<section className="services" id="services">
 
 
-      <div className="service-cards">
-
-
-        <div className="card">
-
-          <h3>Web Development</h3>
-
-          <p>
-            Modern responsive websites for businesses.
-          </p>
-
-        </div>
+<h2 className="fade-in">
+Our Services
+</h2>
 
 
 
-        <div className="card">
-
-          <h3>App Development</h3>
-
-          <p>
-            Mobile apps for Android and iOS.
-          </p>
-
-        </div>
+<div className="service-cards">
 
 
 
-        <div className="card">
+<div className="card slide-up">
 
-          <h3>SEO Optimization</h3>
+<h3>
+Web Development
+</h3>
 
-          <p>
-            Improve your Google ranking and visibility.
-          </p>
+<p>
+Modern responsive websites for businesses.
+</p>
 
-        </div>
-
-
-      </div>
+</div>
 
 
-    </section>
 
-  );
+
+<div className="card slide-up">
+
+<h3>
+App Development
+</h3>
+
+<p>
+Mobile apps for Android and iOS.
+</p>
+
+</div>
+
+
+
+
+<div className="card slide-up">
+
+<h3>
+SEO Optimization
+</h3>
+
+<p>
+Improve your Google ranking and visibility.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+);
 
 }
 

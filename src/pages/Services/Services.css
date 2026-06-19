@@ -26,8 +26,6 @@
 
 
 
-/* Heading */
-
 
 .services h2 {
 
@@ -45,48 +43,36 @@
 
 
 
-/* Cards Container */
+/* GRID + FLEXBOX */
 
 
 .service-cards {
 
 
-    display:flex;
+    width:100%;
 
 
-    justify-content:center;
+    display:grid;
 
 
-    align-items:center;
+    grid-template-columns:repeat(3,1fr);
 
 
     gap:30px;
-
-
-    flex-wrap:wrap;
-
-
-    width:100%;
 
 
 }
 
 
 
-/* Individual Card */
-
 
 .card {
 
 
-    width:300px;
-
-
-    min-height:220px;
+    min-height:250px;
 
 
     padding:40px 25px;
-
 
 
     display:flex;
@@ -99,6 +85,9 @@
 
 
     align-items:center;
+
+
+    text-align:center;
 
 
 
@@ -123,28 +112,24 @@
 
     transition:
 
+    transform .4s ease,
 
-    transform 0.4s cubic-bezier(0.34,1.56,0.64,1),
+    box-shadow .4s ease,
 
-
-    background 0.4s ease,
-
-
-    box-shadow 0.4s ease;
-
+    background .4s ease;
 
 
 }
 
 
 
-/* Hover Animation */
+/* Hover */
 
 
 .card:hover {
 
 
-    transform:translateY(-10px) scale(1.05);
+    transform:translateY(-12px) scale(1.05);
 
 
     background:rgba(255,255,255,0.25);
@@ -157,7 +142,19 @@
 
 
 
-/* Card Heading */
+
+.service-icon {
+
+
+    font-size:45px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
 
 
 .card h3 {
@@ -176,8 +173,6 @@
 
 
 
-/* Card Paragraph */
-
 
 .card p {
 
@@ -185,49 +180,77 @@
     font-size:17px;
 
 
-    color:#cbd5e1;
-
-
     line-height:1.6;
+
+
+    color:#cbd5e1;
 
 
 }
 
 
 
-/* Mobile Responsive */
+
+/* MOBILE */
 
 
-@media(max-width:768px){
+@media(max-width:900px){
 
 
-    .services h2 {
+.service-cards {
 
 
-        font-size:35px;
+    grid-template-columns:repeat(2,1fr);
 
 
-    }
+}
 
 
-
-    .service-cards {
-
-
-        flex-direction:column;
-
-
-    }
+}
 
 
 
-    .card {
+
+@media(max-width:600px){
 
 
-        width:90%;
+.services {
 
 
-    }
+    padding:60px 5%;
+
+
+}
+
+
+
+.services h2 {
+
+
+    font-size:35px;
+
+
+}
+
+
+
+.service-cards {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.card {
+
+
+    width:100%;
+
+
+}
 
 
 }
