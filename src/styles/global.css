@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    min-height:100vh;
+
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+    url("../assets/business-website.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+
+    color:white;
+
+}
+
+
+/* All pages transparent */
+
+section {
+
+    background:transparent;
+
+}
+
+
+/* Content cards */
+
+.card,
+.service-card,
+.project-card {
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:15px;
+
+    padding:20px;
+
+}
+/* LIGHT MODE */
+
+.app {
+
+    min-height:100vh;
+
+    transition:0.5s;
+
+}
+
+
+
+/* DARK MODE */
+
+.app.dark {
+
+    background:#020617;
+
+}
+
+
+
+/* All text */
+
+.app.dark h1,
+.app.dark h2,
+.app.dark h3 {
+
+    color:white;
+
+}
+
+
+.app.dark p,
+.app.dark span {
+
+    color:#cbd5e1;
+
+}
+
+
+
+/* Cards */
+
+.app.dark .card,
+.app.dark .project-card,
+.app.dark .member {
+
+
+    background:rgba(0,0,0,0.45);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    color:white;
+
+}
+
+
+
+/* Contact form */
+
+.app.dark .contact-form {
+
+    background:rgba(0,0,0,0.45);
+
+}
+
+
+
+/* Inputs */
+
+.app.dark input,
+.app.dark textarea {
+
+    background:#1e293b;
+
+    color:white;
+
+}
+
+
+
+/* Button */
+
+.theme-btn {
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    z-index:1000;
+
+}

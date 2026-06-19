@@ -1,0 +1,213 @@
+/* Smooth animation base */
+* {
+  transition: all 0.3s ease;
+}
+
+
+/* Fade In Animation */
+.fade-in {
+  animation: fadeIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+
+/* Slide Up Animation */
+.slide-up {
+
+  animation: slideUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+
+}
+
+
+@keyframes slideUp {
+
+  from {
+
+    opacity: 0;
+    transform: translateY(60px);
+
+  }
+
+  to {
+
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+
+}
+
+
+/* Slide Left Animation */
+.slide-left {
+
+  animation: slideLeft 0.8s ease forwards;
+
+}
+
+
+@keyframes slideLeft {
+
+  from {
+
+    opacity: 0;
+    transform: translateX(-60px);
+
+  }
+
+  to {
+
+    opacity: 1;
+    transform: translateX(0);
+
+  }
+
+}
+
+
+/* Slide Right Animation */
+.slide-right {
+
+  animation: slideRight 0.8s ease forwards;
+
+}
+
+
+@keyframes slideRight {
+
+  from {
+
+    opacity: 0;
+    transform: translateX(60px);
+
+  }
+
+  to {
+
+    opacity: 1;
+    transform: translateX(0);
+
+  }
+
+}
+
+
+/* Zoom In Animation */
+.zoom-in {
+
+  animation: zoomIn 0.8s ease forwards;
+
+}
+
+
+@keyframes zoomIn {
+
+  from {
+
+    opacity: 0;
+    transform: scale(0.8);
+
+  }
+
+  to {
+
+    opacity: 1;
+    transform: scale(1);
+
+  }
+
+}
+
+
+/* Floating Animation */
+.float {
+
+  animation: floating 3s ease-in-out infinite;
+
+}
+
+
+@keyframes floating {
+
+  0% {
+
+    transform: translateY(0);
+
+  }
+
+  50% {
+
+    transform: translateY(-15px);
+
+  }
+
+  100% {
+
+    transform: translateY(0);
+
+  }
+
+}
+
+
+/* Button Hover Animation */
+button,
+.btn {
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+button:hover,
+.btn:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+
+/* Card Hover Animation */
+.card {
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+
+.card:hover {
+
+  transform: translateY(-10px);
+
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+
+}
+
+
+/* Image Hover Effect */
+img {
+
+  transition: transform 0.5s ease;
+
+}
+
+
+img:hover {
+
+  transform: scale(1.05);
+
+}

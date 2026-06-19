@@ -1,0 +1,157 @@
+.about {
+
+    min-height:100vh;
+
+    padding:80px 40px;
+
+    text-align:center;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* Heading */
+
+.about h2 {
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+    color:#e2e8f0;
+
+}
+
+
+
+/* Description */
+
+.about p {
+
+    max-width:700px;
+
+    font-size:20px;
+
+    margin-bottom:40px;
+
+    color:#cbd5e1;
+
+    line-height:1.6;
+
+}
+
+
+
+/* Team Cards */
+
+.team-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:25px;
+
+    width:80%;
+
+}
+
+
+
+/* Member Card */
+
+.member {
+
+    padding:40px 20px;
+
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(10px);
+
+
+    border-radius:15px;
+
+
+    border:1px solid rgba(255,255,255,0.2);
+
+
+    color:white;
+
+
+    transition:0.4s;
+
+}
+
+
+
+.member:hover {
+
+    transform:translateY(-10px);
+
+    background:rgba(255,255,255,0.25);
+
+}
+
+
+
+/* Name */
+
+.member h3 {
+
+    font-size:28px;
+
+    margin-bottom:12px;
+
+    color:#38bdf8;
+
+}
+
+
+
+/* Role */
+
+.member span {
+
+    font-size:17px;
+
+    color:#e2e8f0;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .team-grid{
+
+        grid-template-columns:1fr;
+
+        width:90%;
+
+    }
+
+
+    .about h2{
+
+        font-size:35px;
+
+    }
+
+
+    .about p{
+
+        font-size:18px;
+
+    }
+
+}

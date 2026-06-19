@@ -1,0 +1,233 @@
+.services {
+
+
+    min-height:100vh;
+
+
+    padding:80px 8%;
+
+
+    text-align:center;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+}
+
+
+
+/* Heading */
+
+
+.services h2 {
+
+
+    font-size:45px;
+
+
+    margin-bottom:50px;
+
+
+    color:#e2e8f0;
+
+
+}
+
+
+
+/* Cards Container */
+
+
+.service-cards {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    gap:30px;
+
+
+    flex-wrap:wrap;
+
+
+    width:100%;
+
+
+}
+
+
+
+/* Individual Card */
+
+
+.card {
+
+
+    width:300px;
+
+
+    min-height:220px;
+
+
+    padding:40px 25px;
+
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+
+    background:rgba(255,255,255,0.15);
+
+
+    backdrop-filter:blur(10px);
+
+
+
+    border-radius:15px;
+
+
+
+    border:1px solid rgba(255,255,255,0.2);
+
+
+
+    color:white;
+
+
+
+    transition:
+
+
+    transform 0.4s cubic-bezier(0.34,1.56,0.64,1),
+
+
+    background 0.4s ease,
+
+
+    box-shadow 0.4s ease;
+
+
+
+}
+
+
+
+/* Hover Animation */
+
+
+.card:hover {
+
+
+    transform:translateY(-10px) scale(1.05);
+
+
+    background:rgba(255,255,255,0.25);
+
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.35);
+
+
+}
+
+
+
+/* Card Heading */
+
+
+.card h3 {
+
+
+    font-size:25px;
+
+
+    margin-bottom:15px;
+
+
+    color:#38bdf8;
+
+
+}
+
+
+
+/* Card Paragraph */
+
+
+.card p {
+
+
+    font-size:17px;
+
+
+    color:#cbd5e1;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+/* Mobile Responsive */
+
+
+@media(max-width:768px){
+
+
+    .services h2 {
+
+
+        font-size:35px;
+
+
+    }
+
+
+
+    .service-cards {
+
+
+        flex-direction:column;
+
+
+    }
+
+
+
+    .card {
+
+
+        width:90%;
+
+
+    }
+
+
+}
