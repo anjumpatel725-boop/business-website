@@ -2,7 +2,6 @@ import React, { useState, useEffect, memo } from "react";
 import "./Header.css";
 
 
-<ThemeToggle />
 
 function Header() {
   const [darkMode, setDarkMode] = useState(false);
