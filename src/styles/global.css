@@ -1,18 +1,23 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
 }
 
 
 html {
-    scroll-behavior: smooth;
+
+    scroll-behavior:smooth;
+
 }
+
 
 
 body {
 
-    font-family: Arial, sans-serif;
+    font-family:Arial, sans-serif;
 
     min-height:100vh;
 
@@ -36,10 +41,26 @@ body {
 
     color:white;
 
+    transition:0.5s;
+
 }
 
 
-/* All pages transparent */
+
+/* Dark Mode */
+
+body.dark-mode {
+
+
+    background:#020617;
+
+    color:white;
+
+}
+
+
+
+/* All Sections */
 
 section {
 
@@ -48,11 +69,14 @@ section {
 }
 
 
-/* Content cards */
+
+/* Cards */
+
 
 .card,
 .service-card,
 .project-card {
+
 
     background:rgba(255,255,255,0.12);
 
@@ -62,42 +86,45 @@ section {
 
     padding:20px;
 
-}
-/* LIGHT MODE */
-
-.app {
-
-    min-height:100vh;
-
-    transition:0.5s;
+    transition:0.3s;
 
 }
 
 
 
-/* DARK MODE */
+/* Dark mode cards */
 
-.app.dark {
 
-    background:#020617;
+body.dark-mode .card,
+body.dark-mode .service-card,
+body.dark-mode .project-card {
+
+
+    background:rgba(0,0,0,0.45);
+
+    border:1px solid rgba(255,255,255,0.2);
 
 }
 
 
 
-/* All text */
+/* Text */
 
-.app.dark h1,
-.app.dark h2,
-.app.dark h3 {
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+
 
     color:white;
 
 }
 
 
-.app.dark p,
-.app.dark span {
+
+body.dark-mode p,
+body.dark-mode span {
+
 
     color:#cbd5e1;
 
@@ -105,26 +132,11 @@ section {
 
 
 
-/* Cards */
-
-.app.dark .card,
-.app.dark .project-card,
-.app.dark .member {
+/* Contact Form */
 
 
-    background:rgba(0,0,0,0.45);
+body.dark-mode .contact-form {
 
-    border:1px solid rgba(255,255,255,0.2);
-
-    color:white;
-
-}
-
-
-
-/* Contact form */
-
-.app.dark .contact-form {
 
     background:rgba(0,0,0,0.45);
 
@@ -134,8 +146,10 @@ section {
 
 /* Inputs */
 
-.app.dark input,
-.app.dark textarea {
+
+body.dark-mode input,
+body.dark-mode textarea {
+
 
     background:#1e293b;
 
@@ -145,15 +159,11 @@ section {
 
 
 
-/* Button */
+/* Theme Button */
+
 
 .theme-btn {
 
-    position:fixed;
-
-    top:20px;
-
-    right:20px;
 
     width:45px;
 
@@ -166,7 +176,5 @@ section {
     cursor:pointer;
 
     font-size:22px;
-
-    z-index:1000;
 
 }
