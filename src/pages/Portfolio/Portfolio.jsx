@@ -4,26 +4,44 @@ import "./Portfolio.css";
 
 function Portfolio() {
 
+
   return (
 
     <section className="portfolio" id="portfolio">
 
 
-      <h2>Our Portfolio</h2>
+      <h2 className="fade-in">
+        Our Portfolio
+      </h2>
+
+
 
 
       <div className="portfolio-grid">
 
 
-        <div className="project-card">
+
+        <div className="project-card slide-up">
 
 
-          <h3>E-Commerce Website</h3>
+          <div className="project-icon">
+            🛒
+          </div>
+
+
+          <h3>
+            E-Commerce Website
+          </h3>
 
 
           <p>
-            Online shopping platform with payment integration.
+            Online shopping platform with product management and payment integration.
           </p>
+
+
+          <button className="project-btn">
+            View Project
+          </button>
 
 
         </div>
@@ -31,15 +49,29 @@ function Portfolio() {
 
 
 
-        <div className="project-card">
 
 
-          <h3>Business Dashboard</h3>
+        <div className="project-card slide-up">
+
+
+          <div className="project-icon">
+            📊
+          </div>
+
+
+          <h3>
+            Business Dashboard
+          </h3>
 
 
           <p>
-            Analytics dashboard for business management.
+            Analytics dashboard for business management and data visualization.
           </p>
+
+
+          <button className="project-btn">
+            View Project
+          </button>
 
 
         </div>
@@ -47,21 +79,38 @@ function Portfolio() {
 
 
 
-        <div className="project-card">
 
 
-          <h3>Portfolio Website</h3>
+
+        <div className="project-card slide-up">
+
+
+          <div className="project-icon">
+            💻
+          </div>
+
+
+          <h3>
+            Portfolio Website
+          </h3>
 
 
           <p>
-            Modern personal branding website.
+            Modern personal branding website with responsive design.
           </p>
 
 
+          <button className="project-btn">
+            View Project
+          </button>
+
+
         </div>
+
 
 
       </div>
+
 
 
     </section>
