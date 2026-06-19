@@ -43,7 +43,7 @@ function Header() {
 
 
 <h2 className="logo">
-BusinessPro0
+BusinessPro
 </h2>
 
 
