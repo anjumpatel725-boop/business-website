@@ -1,6 +1,6 @@
 import React, { useState, useEffect, memo } from "react";
 import "./Header.css";
-import ThemeToggle from "../ThemeToggle/ThemeToggle";
+
 
 <ThemeToggle />
 
