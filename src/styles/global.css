@@ -170,3 +170,17 @@ section {
     z-index:1000;
 
 }
+:root {
+  --bg-color: white;
+  --text-color: #222;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: white;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
